@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler's Game Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loader" id="loader">
@@ -29,7 +31,7 @@
                     <a href="#about">About</a>
                 </div>
             </nav>
-            
+
             <div class="hero-content">
                 <h1 class="title">
                     <span class="line">Game Developer</span>
@@ -56,13 +58,13 @@
                     <div class="card-image">
                         <div class="placeholder-game tictactoe">
                             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="33" y1="10" x2="33" y2="90" stroke="#00f2ff" stroke-width="2"/>
-                                <line x1="67" y1="10" x2="67" y2="90" stroke="#00f2ff" stroke-width="2"/>
-                                <line x1="10" y1="33" x2="90" y2="33" stroke="#00f2ff" stroke-width="2"/>
-                                <line x1="10" y1="67" x2="90" y2="67" stroke="#00f2ff" stroke-width="2"/>
-                                <circle cx="50" cy="50" r="12" stroke="#ff00f2" stroke-width="2" fill="none"/>
-                                <line x1="10" y1="10" x2="23" y2="23" stroke="#ff00f2" stroke-width="2"/>
-                                <line x1="23" y1="10" x2="10" y2="23" stroke="#ff00f2" stroke-width="2"/>
+                                <line x1="33" y1="10" x2="33" y2="90" stroke="#00f2ff" stroke-width="2" />
+                                <line x1="67" y1="10" x2="67" y2="90" stroke="#00f2ff" stroke-width="2" />
+                                <line x1="10" y1="33" x2="90" y2="33" stroke="#00f2ff" stroke-width="2" />
+                                <line x1="10" y1="67" x2="90" y2="67" stroke="#00f2ff" stroke-width="2" />
+                                <circle cx="50" cy="50" r="12" stroke="#ff00f2" stroke-width="2" fill="none" />
+                                <line x1="10" y1="10" x2="23" y2="23" stroke="#ff00f2" stroke-width="2" />
+                                <line x1="23" y1="10" x2="10" y2="23" stroke="#ff00f2" stroke-width="2" />
                             </svg>
                         </div>
                     </div>
@@ -120,11 +122,12 @@
                     <div class="card-image">
                         <div class="placeholder-project">
                             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="20" y="30" width="60" height="40" rx="2" stroke="#00f2ff" stroke-width="2" fill="none"/>
-                                <line x1="20" y1="40" x2="80" y2="40" stroke="#00f2ff" stroke-width="2"/>
-                                <circle cx="35" cy="35" r="2" fill="#ff00f2"/>
-                                <circle cx="45" cy="35" r="2" fill="#ff00f2"/>
-                                <circle cx="55" cy="35" r="2" fill="#ff00f2"/>
+                                <rect x="20" y="30" width="60" height="40" rx="2" stroke="#00f2ff" stroke-width="2"
+                                    fill="none" />
+                                <line x1="20" y1="40" x2="80" y2="40" stroke="#00f2ff" stroke-width="2" />
+                                <circle cx="35" cy="35" r="2" fill="#ff00f2" />
+                                <circle cx="45" cy="35" r="2" fill="#ff00f2" />
+                                <circle cx="55" cy="35" r="2" fill="#ff00f2" />
                             </svg>
                         </div>
                     </div>
@@ -142,17 +145,29 @@
 
                 <div class="card" data-tilt>
                     <div class="card-image">
-                        <div class="placeholder-project coming-soon">
-                            <span>+</span>
+                        <div class="placeholder-project">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Graph/network icon -->
+                                <circle cx="30" cy="30" r="8" stroke="#00f2ff" stroke-width="2" fill="none" />
+                                <circle cx="70" cy="30" r="8" stroke="#00f2ff" stroke-width="2" fill="none" />
+                                <circle cx="50" cy="70" r="8" stroke="#00f2ff" stroke-width="2" fill="none" />
+                                <line x1="38" y1="30" x2="62" y2="30" stroke="#ff00f2" stroke-width="2" />
+                                <line x1="35" y1="35" x2="48" y2="65" stroke="#ff00f2" stroke-width="2" />
+                                <line x1="65" y1="35" x2="52" y2="65" stroke="#ff00f2" stroke-width="2" />
+                            </svg>
                         </div>
                     </div>
                     <div class="card-content">
-                        <h3>Add Your Projects</h3>
-                        <p>Showcase your academic work, personal projects, and experiments here.</p>
+                        <h3>PageRank Calculator</h3>
+                        <p>Interactive graph analysis tool implementing Google's PageRank algorithm with real-time
+                            visualization.</p>
                         <div class="card-tags">
-                            <span class="tag">Various</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Flask</span>
                         </div>
-                        <a href="#" class="card-link disabled">Coming Soon</a>
+                        <a href="/projects/pagerank" class="card-link">Try It →</a>
                     </div>
                 </div>
             </div>
@@ -163,8 +178,10 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hardware verification engineer and computer science graduate student with a passion for building games and technical projects.</p>
-                    <p>Currently working with SystemVerilog, UVM, and C++ in the semiconductor industry, while exploring machine learning and operating systems in graduate school.</p>
+                    <p>Hardware verification engineer and computer science graduate student with a passion for building
+                        games and technical projects.</p>
+                    <p>Currently working with SystemVerilog, UVM, and C++ in the semiconductor industry, while exploring
+                        machine learning and operating systems in graduate school.</p>
                     <div class="about-links">
                         <a href="https://github.com/yourusername" class="social-link" target="_blank">GitHub</a>
                         <a href="mailto:your.email@example.com" class="social-link">Email</a>
@@ -193,4 +210,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
