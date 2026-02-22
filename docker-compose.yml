@@ -5,14 +5,12 @@ services:
     image: nginx:alpine
     container_name: portfolio
     restart: unless-stopped
-    ports:
-      - "8080:80"
     volumes:
       - ./www:/usr/share/nginx/html:ro
     networks:
-      - default
+      - network_services 
 
 networks:
-  default:
-    external:
-      name: network_services
+  network_services:
+    external: true
+    name: network-services_network_services
